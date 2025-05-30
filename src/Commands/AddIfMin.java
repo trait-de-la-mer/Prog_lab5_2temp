@@ -1,7 +1,7 @@
 package Commands;
 
-public class ReplaceIfGreater extends Command{
-    private String name = "replaceIfGreater";
+public class AddIfMin extends Command{
+    private String name = "AddIfMin";
 
     public String getName() {
         return name;

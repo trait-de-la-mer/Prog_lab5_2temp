@@ -1,7 +1,7 @@
 package Commands;
 
-public class RemoveAllByAnnualTurnover extends Command{
-    private String name = "removeAllByAnnualTurnover";
+public class AddIfMax extends Command{
+    private String name = "addIfMax";
 
     public String getName() {
         return name;

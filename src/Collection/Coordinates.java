@@ -1,10 +1,10 @@
 package Collection;
 
 class Coordinates {
-    private int x;
-    private float y;
+    private Integer x;
+    private long y;
 
-    public Coordinates(int x, float y) {
+    public Coordinates(Integer x, long y) {
         this.x = x;
         this.y = y;
     }

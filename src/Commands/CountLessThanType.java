@@ -1,4 +1,10 @@
 package Commands;
 
-public class CountLessThanType {
+public class CountLessThanType extends Command{
+    private String name = "countLessThanType";
+
+    public String getName() {
+        return name;
+    }
 }
+
