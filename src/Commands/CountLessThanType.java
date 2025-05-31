@@ -6,5 +6,10 @@ public class CountLessThanType extends Command{
     public String getName() {
         return name;
     }
+
+    @Override
+    public String execute() {
+        return "";
+    }
 }
 

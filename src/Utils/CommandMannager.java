@@ -20,4 +20,13 @@ public class CommandMannager {
     public boolean isCommandExits(String nameCommand){
         return commands.containsKey(nameCommand);
     }
+
+    public void executeC(String nameCommand){
+        if (commands.containsKey(nameCommand)){
+            commands.get(nameCommand).execute();
+        }
+        else{
+            System.out.println("ебанутый?");
+        }
+    }
 }

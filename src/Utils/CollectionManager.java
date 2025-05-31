@@ -6,15 +6,24 @@ import java.util.HashMap;
 
 public class CollectionManager {
     static private int lastId = 0;
-    private HashMap<Object, Organization> orgCollection = new HashMap<>();
+    private final HashMap<Object, Organization> orgCollection = new HashMap<>();
 
-    public void addElement(Object key, Organization org){
+    public void addElement(String key, Organization org){
         orgCollection.put(key, org);
+    }
+
+    public void clearCollection(){
+        orgCollection.clear();
     }
 
     public Integer generateId(){
         return ++lastId;
     }
+
+    public void printCol(){
+        System.out.println(orgCollection);
+    }
+
 
     //СЮДА НАПИСАТЬ ЗАГРУЗУ В КОЛЛЕКЦИЮ И В КОНСТРУКТОР ЗАСУНУТЬ ЛИБО ФАЙЛ ЛИБО МЕНЕГЕР ФАЙЛОВ
 }

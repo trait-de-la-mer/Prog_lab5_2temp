@@ -6,4 +6,9 @@ public class ExecuteScript extends Command{
     public String getName() {
         return name;
     }
+
+    @Override
+    public String execute() {
+        return "";
+    }
 }

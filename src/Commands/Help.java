@@ -6,4 +6,9 @@ public class Help extends Command {
     public String getName() {
         return name;
     }
+
+    @Override
+    public String execute() {
+        return "";
+    }
 }
