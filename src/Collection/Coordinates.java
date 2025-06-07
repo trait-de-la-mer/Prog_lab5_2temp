@@ -1,11 +1,14 @@
 package Collection;
 
-class Coordinates {
+public class Coordinates {
     private Integer x;
     private long y;
 
-    public Coordinates(Integer x, long y) {
+    public void setX(Integer x) {
         this.x = x;
+    }
+
+    public void setY(long y) {
         this.y = y;
     }
 

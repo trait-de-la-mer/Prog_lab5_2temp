@@ -1,7 +1,19 @@
 package Commands;
 
+import Utils.CollectionManager;
+import Utils.CommandMannager;
+
 public abstract class Command{
-    private String name = "";
+    protected String name = "";
+    private final CollectionManager cm;
+
+    public CollectionManager getCollectionManager() {
+        return cm;
+    }
+
+    public Command(CollectionManager cm){
+        this.cm = cm;
+    }
 
     public String getName() {
         return name;

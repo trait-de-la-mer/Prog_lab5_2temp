@@ -1,7 +1,13 @@
 package Commands;
 
+import Utils.CollectionManager;
+
 public class CountLessThanType extends Command{
-    private String name = "countLessThanType";
+    {name = "countLessThanType";}
+
+    public CountLessThanType(CollectionManager cm) {
+        super(cm);
+    }
 
     public String getName() {
         return name;

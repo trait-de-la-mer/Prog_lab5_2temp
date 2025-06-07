@@ -5,24 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="009fdd97-7165-4538-b55c-9fe2edd71488" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Commands/Printcccc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Utils/Consoll.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/testlab5/Collection/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testlab5/Collection/Address.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/testlab5/Collection/Coordinates.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testlab5/Collection/Coordinates.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/testlab5/Collection/Organization.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testlab5/Collection/Organization.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testlab5/Collection/OrganizationType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testlab5/Collection/OrganizationType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testlab5/Commands/Insert.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testlab5/Commands/MaxBy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testlab5/Commands/PrintDescending.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testlab5/Commands/RemoveAllByAnnualTurnover.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testlab5/Commands/RemoveKeyNull.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testlab5/Commands/ReplaceIfGreater.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testlab5/Commands/AddIfMin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testlab5/Commands/Clear.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testlab5/Commands/Clear.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testlab5/Commands/Command.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testlab5/Commands/Command.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testlab5/Commands/CountLessThanType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testlab5/Commands/CountLessThanType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testlab5/Commands/ExecuteScript.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testlab5/Commands/ExecuteScript.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testlab5/Commands/Exit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testlab5/Commands/Exit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testlab5/Commands/Help.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testlab5/Commands/Help.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testlab5/Commands/History.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testlab5/Commands/History.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testlab5/Commands/Info.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testlab5/Commands/Info.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testlab5/Commands/Save.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testlab5/Commands/Save.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testlab5/Commands/Show.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testlab5/Commands/Show.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testlab5/Commands/Update.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testlab5/Commands/Update.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/testlab5/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testlab5/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/testlab5/Utils/CollectionManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testlab5/Utils/CollectionManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testlab5/Utils/ComHistory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testlab5/Utils/Consoll.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testlab5/Utils/Consoll.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collection/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collection/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collection/Coordinates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collection/Coordinates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collection/Organization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collection/Organization.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Commands/AddIfMax.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/AddIfMax.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Commands/AddIfMin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/AddIfMin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/AddIfMin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/Insert.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Commands/Clear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/Clear.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Commands/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/Command.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Commands/CountLessThanType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/CountLessThanType.java" afterDir="false" />
@@ -33,13 +39,14 @@
       <change beforePath="$PROJECT_DIR$/src/Commands/History.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/History.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Commands/Info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/Info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Commands/PrintFieldAscedingPostalAddress.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/PrintFieldAscedingPostalAddress.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/Printcccc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/Printcccc.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Commands/RemoveLower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/RemoveLower.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Commands/Save.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/Save.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Commands/Show.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/Show.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Commands/Update.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/Update.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Utils/CollectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/CollectionManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Utils/CommandMannager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/CommandMannager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utils/Consoll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/Consoll.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,16 +88,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/0/Documents/лабы/прога/лаб5/testlab5/src/Main.java&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/0/Documents/лабы/прога/лаб5/testlab5",
+    "onboarding.tips.debug.path": "C:/Users/0/Documents/лабы/прога/лаб5/testlab5/src/Main.java"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

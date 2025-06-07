@@ -16,14 +16,14 @@ public class Main
         collectionManager.addElement("test", test);
         CommandMannager cm = new CommandMannager(
                 new Clear(collectionManager),
-                new Printcccc(collectionManager) //УДАЛИТЬ!!!!!!!!!!!!!1
-//                new ExecuteScript(),
+                new Printcccc(collectionManager), //УДАЛИТЬ!!!!!!!!!!!!!1
+                new Insert(collectionManager)
 //                new Exit(),
 //                new Help(),
 //                new History(),
 //                new Info(),
 //                new AddIfMax(),
-//                new AddIfMin(),
+//                new Insert(),
 //                new CountLessThanType(),
 //                new FilterLessThanAnnualTurnover(),
 //                new PrintFieldAscedingPostalAddress(),

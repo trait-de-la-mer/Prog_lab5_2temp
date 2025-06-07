@@ -13,6 +13,7 @@ public class Printcccc extends Command{
     }
 
     public Printcccc(CollectionManager cm){
+        super(cm);
         this.cm = cm;
     }
 

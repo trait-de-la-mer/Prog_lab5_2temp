@@ -10,6 +10,11 @@ public class Consoll {
         cm = commandMannager;
     }
 
+    public static String askSmt(String text){
+        System.out.printf("Введите %s:", text);
+        return new Scanner(System.in).nextLine().toLowerCase(Locale.ENGLISH);
+    }
+
     public void startConsole(){
         String line = "";
         Scanner sc = new Scanner(System.in);

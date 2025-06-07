@@ -16,7 +16,7 @@ public class CollectionManager {
         orgCollection.clear();
     }
 
-    public Integer generateId(){
+    public static Integer generateId(){
         return ++lastId;
     }
 
