@@ -2,10 +2,10 @@ package Utils;
 
 import Commands.*;
 
+import java.util.Arrays;
 import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
 import java.util.Locale;
+import java.util.Objects;
 
 public class CommandMannager {
     private final HashMap<String, Command> commands = new HashMap<>();
@@ -21,10 +21,21 @@ public class CommandMannager {
         return commands.containsKey(nameCommand);
     }
 
-    public void executeC(String nameCommand){
-        if (commands.containsKey(nameCommand)){
-            commands.get(nameCommand).execute();
-        }
+    public void executeC(String... nameCommand){
+//        System.out.println(Arrays.toString(nameCommand));
+//        System.out.println(nameCommand.length);
+//        System.out.println(nameCommand[0] + "132");
+//        System.out.println(nameCommand[0] == "");
+        if (nameCommand != null && nameCommand.length != 0 && !Objects.equals(nameCommand[0], "")
+                && commands.containsKey(nameCommand[0])){
+            String[] copyNameCommand = Arrays.copyOf(nameCommand, nameCommand.length + 1);
+                if (nameCommand.length == 1){
+                    copyNameCommand[1] = null;
+                }
+                try {
+                    commands.get(copyNameCommand[0]).execute(copyNameCommand[1]);
+                } catch (Exception ex) {System.out.println(ex.getMessage());}
+            }
         else{
             System.out.println("ебанутый?");
         }

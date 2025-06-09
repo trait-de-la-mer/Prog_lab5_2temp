@@ -5,7 +5,7 @@ import Collection.Organization;
 import java.util.HashMap;
 
 public class CollectionManager {
-    static private int lastId = 0;
+    static private long lastId = 0;
     private final HashMap<Object, Organization> orgCollection = new HashMap<>();
 
     public void addElement(String key, Organization org){
@@ -16,7 +16,11 @@ public class CollectionManager {
         orgCollection.clear();
     }
 
-    public static Integer generateId(){
+    public HashMap<Object, Organization> getOrgCollection() {
+        return orgCollection;
+    }
+
+    public static Long generateId(){
         return ++lastId;
     }
 

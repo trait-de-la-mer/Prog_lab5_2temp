@@ -14,7 +14,6 @@ public class Info extends Command{
     }
 
     @Override
-    public String execute() {
-        return "";
+    public void execute(String arg) {
     }
 }

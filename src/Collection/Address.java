@@ -1,15 +1,15 @@
 package Collection;
 
 public class Address {
-    private String street;
-
-    public void setStreet(String street) {
-        this.street = street;
-    }
+    private String zipCode; //Поле может быть null
 
     public void setZipCode(String zipCode) {
+        if (zipCode == null) throw new IllegalArgumentException("индекс не может быть null");
         this.zipCode = zipCode;
     }
 
-    private String zipCode; //Поле может быть null
+    @Override
+    public String toString() {
+        return "zipCode='" + zipCode;
+    }
 }

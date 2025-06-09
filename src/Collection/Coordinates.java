@@ -1,14 +1,15 @@
 package Collection;
 
 public class Coordinates {
-    private Integer x;
-    private long y;
+    private int x;
+    private Double y; //Поле не может быть null
 
     public void setX(Integer x) {
+        if (x == null) throw new IllegalArgumentException("x не может быть null");
         this.x = x;
     }
 
-    public void setY(long y) {
+    public void setY(Double y) {
         this.y = y;
     }
 

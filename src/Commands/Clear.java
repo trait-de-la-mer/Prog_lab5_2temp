@@ -9,8 +9,8 @@ public class Clear extends Command{
     }
 
     @Override
-    public String execute() {
+    public void execute(String args) {
+        if (!args.isEmpty()) throw new IllegalArgumentException("В команде clear не может быть аргументов!");
         getCollectionManager().clearCollection();
-        return "";
     }
 }

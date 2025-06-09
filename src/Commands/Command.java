@@ -7,18 +7,17 @@ public abstract class Command{
     protected String name = "";
     private final CollectionManager cm;
 
-    public CollectionManager getCollectionManager() {
-        return cm;
-    }
-
     public Command(CollectionManager cm){
         this.cm = cm;
+    }
+
+    public CollectionManager getCollectionManager() {
+        return cm;
     }
 
     public String getName() {
         return name;
     }
 
-    public abstract String execute();
-    
+    public abstract void execute(String parametr);
 }

@@ -12,26 +12,13 @@ public class Main
 {
 
     public static void main(String[] args) {
-        Organization test = new Organization();
+//        Organization test = new Organization();
         CollectionManager collectionManager = new CollectionManager();
-        collectionManager.addElement("test", test);
+//        collectionManager.addElement("test", test);
         CommandMannager cm = new CommandMannager(
                 new Clear(collectionManager),
                 new Printcccc(collectionManager), //УДАЛИТЬ!!!!!!!!!!!!!1
                 new Insert(collectionManager)
-//                new Exit(),
-//                new Help(),
-//                new History(),
-//                new Info(),
-//                new AddIfMax(),
-//                new Insert(),
-//                new CountLessThanType(),
-//                new FilterLessThanAnnualTurnover(),
-//                new PrintFieldAscedingPostalAddress(),
-//                new RemoveLower(),
-//                new Save(),
-//                new Show(),
-//                new Update()
         );
 
         Consoll console = new Consoll(cm);

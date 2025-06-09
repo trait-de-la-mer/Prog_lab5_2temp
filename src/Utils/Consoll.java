@@ -12,7 +12,7 @@ public class Consoll {
 
     public static String askSmt(String text){
         System.out.printf("Введите %s:", text);
-        return new Scanner(System.in).nextLine().toLowerCase(Locale.ENGLISH);
+        return new Scanner(System.in).nextLine();
     }
 
     public void startConsole(){
@@ -20,7 +20,8 @@ public class Consoll {
         Scanner sc = new Scanner(System.in);
         while (!line.equals("stop")){
             line = sc.nextLine().toLowerCase(Locale.ENGLISH);
-            cm.executeC(line);
+            String[] comAndArgs = line.split(" ");
+            cm.executeC(comAndArgs);
         }
     }
 

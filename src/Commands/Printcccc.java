@@ -18,8 +18,7 @@ public class Printcccc extends Command{
     }
 
     @Override
-    public String execute() {
+    public void execute(String arg) {
         cm.printCol();
-        return "Succes print";
     }
 }
