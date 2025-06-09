@@ -6,6 +6,7 @@ import Utils.Consoll;
 
 import java.util.Locale;
 import java.util.Scanner;
+import java.util.function.Consumer;
 
 public class Main
 {
