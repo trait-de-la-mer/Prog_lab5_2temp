@@ -7,7 +7,6 @@ import java.io.*;
 import java.util.ArrayList;
 
 public class ExecuteScript extends Command{
-    static ArrayList<String> files = new ArrayList<>();
     {name = "script";}
     public ExecuteScript(CollectionManager cm) {
         super(cm);
@@ -15,11 +14,13 @@ public class ExecuteScript extends Command{
 
     @Override
     public void execute(String file) {
-        if (files.contains(file)) throw new IllegalArgumentException("Файл уже в обработке, ты хочешь рекурсию?");
+        if (Consoll.getFiles().contains(file)) throw new IllegalArgumentException("Файл уже в обработке, ты хочешь рекурсию?");
         Consoll.setScriptFlag(true);
         try{
-            files.add(file);
-            Consoll.setReader(new BufferedReader(new InputStreamReader(new FileInputStream(file))));
+            InputStream reader = new FileInputStream(file);
+            Consoll.setScriptFlag(true);
+            Consoll.addFile(file);
+            Consoll.setReader(reader);
         } catch (FileNotFoundException e) {
             throw new IllegalArgumentException("Файл: " + file + " - не найден"); //если ошибка прав доступа - мне пизда
         }
