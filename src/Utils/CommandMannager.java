@@ -34,7 +34,7 @@ public class CommandMannager {
                 }
                 try {
                     commands.get(copyNameCommand[0]).execute(copyNameCommand[1]);
-                } catch (Exception ex) {System.out.println(ex.getMessage());}
+                } catch (Exception ex) {Consoll.printSmt(ex.getMessage());}
             }
         else{
             System.out.println("ебанутый?");

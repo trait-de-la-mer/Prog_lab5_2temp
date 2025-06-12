@@ -21,9 +21,7 @@ public class Insert extends Command {
 
     @Override
     public void execute(String parametr) {
-        System.out.println(1);
         if (parametr == null || parametr.isBlank()) throw new IllegalArgumentException("Неправильный ключ!");
-        System.out.println(1);
         if (getCollectionManager().getOrgCollection().containsKey(parametr))
             throw new IllegalArgumentException("Элемент с таким ключом уже есть!");
         Organization organization = new Organization();
@@ -53,7 +51,9 @@ public class Insert extends Command {
             return false;
         } catch (Exception ex) {
             if (ex.getMessage().startsWith("No enum constant")) {
-                throw new IllegalArgumentException("Недопустимый тип организации");}
+                System.out.println("Недопустимый тип организации");
+                return false;
+            }
             System.out.println(ex.getMessage());
             return false;
         }
