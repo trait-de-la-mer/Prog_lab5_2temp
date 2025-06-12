@@ -8,10 +8,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ewq.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ewq.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/testlab5/Commands/ExecuteScript.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testlab5/Commands/ExecuteScript.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testlab5/Commands/Insert.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testlab5/Commands/Insert.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/testlab5/Utils/Consoll.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testlab5/Utils/Consoll.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Commands/ExecuteScript.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/ExecuteScript.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Commands/Insert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/Insert.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Utils/Consoll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/Consoll.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

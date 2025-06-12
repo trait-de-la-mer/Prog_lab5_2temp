@@ -20,6 +20,7 @@ public class ExecuteScript extends Command{
             InputStream reader = new FileInputStream(file);
             Consoll.setScriptFlag(true);
             Consoll.addFile(file);
+            Consoll.addReader(reader);
             Consoll.setReader(reader);
         } catch (FileNotFoundException e) {
             throw new IllegalArgumentException("Файл: " + file + " - не найден"); //если ошибка прав доступа - мне пизда

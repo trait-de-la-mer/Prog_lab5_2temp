@@ -1,5 +1,5 @@
 insert asd
-COMMERCIALd
+COMMERCIAL
 asda
 ADA
 142g

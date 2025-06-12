@@ -44,19 +44,8 @@ public class Consoll {
 
     public void startConsole(){
         String line;
-        do{//try{
+        do{
         line = generateNextLine().toLowerCase(Locale.ENGLISH).trim().replaceAll("\\s+", " ");
-//        }catch (NullPointerException ex) {
-//            if (files.size() == 1) {
-//                setReader(System.in);
-//            }
-//            else {
-//                files.removeLast();
-//                readers.removeLast();
-//                setReader(readers.getLast());
-//            }
-//            line = generateNextLine().toLowerCase(Locale.ENGLISH).trim().replaceAll("\\s+", " ");
-//        }
             String[] comAndArgs = line.split(" ");
             cm.executeC(comAndArgs);
         } while (true);
@@ -74,10 +63,10 @@ public class Consoll {
                     setReader(System.in);
                 }
                 else {
-                    files.removeLast();
-                    readers.removeLast();
                     setReader(readers.getLast());
                 }
+                files.removeLast();
+                readers.removeLast();
                 return generateNextLine();
             }
             System.out.println(line);
