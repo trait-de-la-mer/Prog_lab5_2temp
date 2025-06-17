@@ -5,43 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="009fdd97-7165-4538-b55c-9fe2edd71488" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ewq.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main/Utils/JParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testlab5/Collection/Address.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testlab5/Collection/Coordinates.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testlab5/Collection/Organization.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testlab5/Collection/OrganizationType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testlab5/Commands/Clear.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testlab5/Commands/Command.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testlab5/Commands/ExecuteScript.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testlab5/Commands/Exit.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testlab5/Commands/Info.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testlab5/Commands/Insert.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testlab5/Commands/Printcccc.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testlab5/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testlab5/Utils/CollectionManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testlab5/Utils/CommandMannager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testlab5/Utils/Consoll.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Collection/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Collection/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Collection/Coordinates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Collection/Coordinates.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Collection/Organization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Collection/Organization.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Collection/OrganizationType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Collection/OrganizationType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Commands/Clear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Commands/Clear.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Commands/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Commands/Command.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Commands/ExecuteScript.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Commands/ExecuteScript.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Commands/Exit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Commands/Exit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Commands/Info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Commands/Info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Commands/Insert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Commands/Insert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Commands/Printcccc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Commands/Printcccc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Utils/CollectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Utils/CollectionManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Utils/CommandMannager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Utils/CommandMannager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Utils/Consoll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Utils/Consoll.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testlab5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/testlab5.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Collection/OrganizationType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Collection/OrganizationType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Commands/Insert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Commands/Insert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main/Collection/OrganizationType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main/Collection/OrganizationType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main/Commands/Insert.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main/Commands/Insert.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,8 +108,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main/Main.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="2" />
+          <line>15</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

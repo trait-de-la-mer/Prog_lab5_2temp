@@ -1,0 +1,50 @@
+{
+  "org1": {
+    "id": 1,
+    "name": "Google",
+    "coordinates": {
+      "x": 37,
+      "y": 122
+    },
+    "creationDate": "2023-11-15",
+    "annualTurnover": 2,
+    "fullName": "Google LLC",
+    "type": "PRIVATE_IMITED_COMPANY",
+    "postalAddress": {
+      "street": "1600 Amphitheatre Parkway",
+      "zipCode": "94043"
+    }
+  },
+  "org2": {
+    "id": 2,
+    "name": "NASA",
+    "coordinates": {
+      "x": 38,
+      "y": 77
+    },
+    "creationDate": "2023-11-16",
+    "annualTurnover": 123,
+    "fullName": "National Aeronautics and Space Administration",
+    "type": "GOVERNMENT",
+    "postalAddress": {
+      "street": "300 E St SW",
+      "zipCode": "20546"
+    }
+  },
+  "org3": {
+    "id": 3,
+    "name": "Tesla",
+    "coordinates": {
+      "x": 37,
+      "y": 122
+    },
+    "creationDate": "2023-11-17",
+    "annualTurnover": 538,
+    "fullName": "Tesla, Inc.",
+    "type": "PRIVATE_LIMITED_COMPANY",
+    "postalAddress": {
+      "street": "3500 Deer Creek Road",
+      "zipCode": "94304"
+    }
+  }
+}

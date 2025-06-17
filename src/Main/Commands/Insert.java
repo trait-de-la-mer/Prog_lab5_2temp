@@ -29,7 +29,7 @@ public class Insert extends Command {
         Coordinates coordinates = new Coordinates();
         organization.setId(CollectionManager.generateId());
         organization.setCreationDate(LocalDate.now());
-        while(!input(Arrays.toString(OrganizationType.values()), organization::setType, OrganizationType::valueOf));
+        while(!input(Arrays.toString(OrganizationType.values()), organization::setType, OrganizationType::fromString));
         while(!input("имя", organization::setName, String::valueOf));
         while(!input("полное имя", organization::setFullName, String::valueOf));
         while(!input("годовой оборот", organization::setAnnualTurnover, Double::valueOf));
@@ -50,10 +50,6 @@ public class Insert extends Command {
             System.out.println("Проверь пральность ввода!");
             return false;
         } catch (Exception ex) {
-            if (ex.getMessage().startsWith("No enum constant")) {
-                System.out.println("Недопустимый тип организации");
-                return false;
-            }
             System.out.println(ex.getMessage());
             return false;
         }
