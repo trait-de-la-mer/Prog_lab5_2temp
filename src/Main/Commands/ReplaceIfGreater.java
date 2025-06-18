@@ -23,7 +23,7 @@ public class ReplaceIfGreater extends Command{
         try{
             key = Integer.valueOf(args);
         } catch (NumberFormatException e) {
-            throw new RuntimeException("аргумент должен быть Long");
+            throw new RuntimeException("аргумент должен быть int");
         }
         Organization organization = new Organization();
         Address address = new Address();

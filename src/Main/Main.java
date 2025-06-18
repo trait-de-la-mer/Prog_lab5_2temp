@@ -27,7 +27,8 @@ public class Main
                 new Update(collectionManager),
                 new Remove(collectionManager),
                 new Save(collectionManager),
-                new ReplaceIfGreater(collectionManager)
+                new ReplaceIfGreater(collectionManager),
+                new RemoveGreaterKey(collectionManager)
         );
         Consoll console = new Consoll(cm);
         console.startConsole();
