@@ -9,12 +9,15 @@ import org.json.simple.parser.ParseException;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
-import java.sql.SQLOutput;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
 
 public class JParser {
+    CollectionManager collectionManager;
+    public JParser(CollectionManager collectionManager){
+        this.collectionManager = collectionManager;
+    }
 
     public HashMap<String, Organization> parse(String file){
         HashMap<String, Organization> organizationsMap = new HashMap<>();
@@ -27,7 +30,9 @@ public class JParser {
                 String orgKey = (String) key;
                 JSONObject orgJson = (JSONObject) jsonObject.get(orgKey);
                 Organization org = new Organization();
-                org.setId((Long.valueOf(orgJson.get("id").toString())));
+                Long id = (Long.valueOf(orgJson.get("id").toString()));
+                if (id > collectionManager.getLastId()){collectionManager.setLastId(id);}
+                org.setId(id);
                 org.setName(orgJson.get("name").toString());
                 JSONObject coordinatesJson = (JSONObject) orgJson.get("coordinates");
                 Coordinates coordinates = new Coordinates();

@@ -28,7 +28,7 @@ public class Insert extends Command {
         Organization organization = new Organization();
         Address address = new Address();
         Coordinates coordinates = new Coordinates();
-        organization.setId(CollectionManager.generateId());
+        organization.setId(getCollectionManager().generateId());
         organization.setCreationDate(LocalDate.now());
         while(!input(Arrays.toString(OrganizationType.values()), organization::setType, OrganizationType::fromString));
         while(!input("имя", organization::setName, String::valueOf));
@@ -40,6 +40,7 @@ public class Insert extends Command {
         while(!input("Индекс", address::setZipCode, String::valueOf));;
         organization.setPostalAddress(address);
         getCollectionManager().addElement(parametr, organization);
+        Consoll.printSmt("Успешно добавлен!");
     }
 
     protected static <T> boolean input(String fieldName, Consumer<T> setter, Function<String, T> intoValue) {

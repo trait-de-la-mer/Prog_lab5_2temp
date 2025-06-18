@@ -6,10 +6,17 @@ import java.time.ZonedDateTime;
 import java.util.HashMap;
 
 public class CollectionManager {
-    private static long lastId = 0;
+    private long lastId = 0;
     private HashMap<String, Organization> orgCollection = new HashMap<>();
     private final ZonedDateTime creationDate = ZonedDateTime.now();
 
+    public void setLastId(long lastId) {
+        this.lastId = lastId;
+    }
+
+    public long getLastId() {
+        return lastId;
+    }
 
     public ZonedDateTime getCreationDate() {
         return creationDate;
@@ -42,7 +49,7 @@ public class CollectionManager {
         return orgCollection;
     }
 
-    public static Long generateId(){
+    public Long generateId(){
         return ++lastId;
     }
 

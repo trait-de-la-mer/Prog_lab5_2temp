@@ -13,7 +13,7 @@ public class Main
 
     public static void main(String[] args){
        CollectionManager collectionManager = new CollectionManager();
-        JParser jParser = new JParser();
+        JParser jParser = new JParser(collectionManager);
         collectionManager.setOrgCollection(jParser.parse("ewq.json"));
 
         CommandMannager cm = new CommandMannager(
