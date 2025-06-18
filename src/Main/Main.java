@@ -28,7 +28,8 @@ public class Main
                 new Remove(collectionManager),
                 new Save(collectionManager),
                 new ReplaceIfGreater(collectionManager),
-                new RemoveGreaterKey(collectionManager)
+                new RemoveGreaterKey(collectionManager),
+                new RemoveAllByAnnualTurnover(collectionManager)
         );
         Consoll console = new Consoll(cm);
         console.startConsole();
