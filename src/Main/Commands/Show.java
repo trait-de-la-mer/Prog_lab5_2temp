@@ -18,7 +18,7 @@ public class Show extends Command{
         if (args != null && !args.isEmpty()) throw new IllegalArgumentException(
                 "В команде " + getName() + " не может быть аргументов!");
         for (Integer key : getCollectionManager().getOrgCollection().keySet()){
-            Consoll.printSmt(getCollectionManager().getOrgCollection().get(key).toString());
+            Consoll.printSmt(key + " - " + getCollectionManager().getOrgCollection().get(key).toString());
         }
     }
 }

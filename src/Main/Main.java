@@ -29,7 +29,8 @@ public class Main
                 new Save(collectionManager),
                 new ReplaceIfGreater(collectionManager),
                 new RemoveGreaterKey(collectionManager),
-                new RemoveAllByAnnualTurnover(collectionManager)
+                new RemoveAllByAnnualTurnover(collectionManager),
+                new MaxByIn(collectionManager)
         );
         Consoll console = new Consoll(cm);
         console.startConsole();

@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="009fdd97-7165-4538-b55c-9fe2edd71488" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Main/Commands/RemoveAllByAnnualTurnover.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main/Commands/MaxByIn.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Commands/Show.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Commands/Show.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main/Commands/RemoveAllByAnnualTurnover.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main/Commands/RemoveAllByAnnualTurnover.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main/Commands/Show.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main/Commands/Show.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +105,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main/Main.java</url>
-          <line>34</line>
+          <line>35</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
