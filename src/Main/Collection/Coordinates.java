@@ -17,4 +17,12 @@ public class Coordinates {
     public String toString() {
         return x + ";" + y;
     }
+
+    public int getX() {
+        return x;
+    }
+
+    public Double getY() {
+        return y;
+    }
 }

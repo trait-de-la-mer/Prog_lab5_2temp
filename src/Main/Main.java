@@ -14,7 +14,11 @@ public class Main
     public static void main(String[] args){
        CollectionManager collectionManager = new CollectionManager();
         JParser jParser = new JParser();
-        System.out.println(jParser.parse("ewq.json"));
+        collectionManager.setOrgCollection(jParser.parse("ewq.json"));
+        System.out.println(collectionManager.getOrgCollection());
+//        collectionManager.getOrgCollection().get("org2").setAnnualTurnover(325324.0);
+//        jParser.convertToJson(collectionManager.getOrgCollection(), "ewq.json");
+
 //        CommandMannager cm = new CommandMannager(
 //                new ExecuteScript(collectionManager),
 //                new Clear(collectionManager),

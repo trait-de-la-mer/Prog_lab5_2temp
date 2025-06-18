@@ -8,6 +8,10 @@ public class Address {
         this.zipCode = zipCode;
     }
 
+    public String getZipCode() {
+        return zipCode;
+    }
+
     @Override
     public String toString() {
         return "zipCode='" + zipCode;

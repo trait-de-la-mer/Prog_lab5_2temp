@@ -7,9 +7,9 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
+import java.nio.charset.StandardCharsets;
+import java.sql.SQLOutput;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
@@ -19,9 +19,9 @@ public class JParser {
     public HashMap<String, Organization> parse(String file){
         HashMap<String, Organization> organizationsMap = new HashMap<>();
         JSONParser parser = new JSONParser();
-        DateTimeFormatter dateFormatter = DateTimeFormatter.ISO_LOCAL_DATE_TIME;
 
-        try (FileReader reader = new FileReader(file)) {
+        try (InputStreamReader reader = new InputStreamReader(
+                new FileInputStream(file), StandardCharsets.UTF_8)) {
             JSONObject jsonObject = (JSONObject) parser.parse(reader);
             for (Object key : jsonObject.keySet()) {
                 String orgKey = (String) key;
@@ -38,7 +38,7 @@ public class JParser {
                 org.setCreationDate(LocalDate.parse(creationDateStr));
                 org.setAnnualTurnover(Double.valueOf(orgJson.get("annualTurnover").toString()));
                 org.setFullName(orgJson.get("fullName").toString());
-                String typeStr = orgJson.get("type").toString(); // ПРОВЕРИТЬ!!!!!!!!!!!!!!!!!1
+                String typeStr = orgJson.get("type").toString();
                 org.setType(OrganizationType.fromString(typeStr));
                 JSONObject addressJson = (JSONObject) orgJson.get("postalAddress");
                 Address address = new Address();
@@ -57,6 +57,40 @@ public class JParser {
             Consoll.printSmt("Непредвиденная ошибка чтения файла " + file);
         } catch (ParseException e) {
           Consoll.printSmt("Что-то не так с данными файла");
+        } catch (NullPointerException e) {
+            Consoll.printSmt("Ошибка, возможно что-то не так с названиями полей");
+        } catch (Exception e) {
+            System.err.println("Критическая ошибка");;
         }
         return organizationsMap;
-    }}
+    }
+
+
+        public void convertToJson(HashMap<String, Organization> organizations, String file) {
+            JSONObject orgJ = new JSONObject();
+            try (PrintWriter writer = new PrintWriter(new FileOutputStream(file))) {
+                for (String key : organizations.keySet()) {
+                    Organization org = organizations.get(key);
+                    JSONObject orgJson = new JSONObject();
+                    orgJson.put("id", org.getId());
+                    orgJson.put("name", org.getName());
+                    orgJson.put("creationDate", org.getCreationDate().format(DateTimeFormatter.ISO_LOCAL_DATE));
+                    JSONObject coords = new JSONObject();
+                    coords.put("x", org.getCoordinates().getX());
+                    coords.put("y", org.getCoordinates().getY());
+                    orgJson.put("coordinates", coords);
+                    orgJson.put("annualTurnover", org.getAnnualTurnover());
+                    orgJson.put("fullName", org.getFullName());
+                    orgJson.put("type", org.getType().name());
+                    JSONObject address = new JSONObject();
+                    address.put("zipCode", org.getPostalAddress().getZipCode());
+                    orgJson.put("postalAddress", address);
+                    orgJ.put(key, orgJson);
+                }
+                writer.write(orgJ.toJSONString());
+                writer.flush();
+            } catch (Exception e) {
+                Consoll.printSmt("Произошла ошибка при записи в файл");
+            }
+        }
+    }

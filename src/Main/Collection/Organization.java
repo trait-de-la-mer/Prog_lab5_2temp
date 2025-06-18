@@ -17,6 +17,37 @@ public class Organization{
         this.creationDate = creationDate;
     }
 
+    public Long getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public Coordinates getCoordinates() {
+        return coordinates;
+    }
+
+    public LocalDate getCreationDate() {
+        return creationDate;
+    }
+
+    public double getAnnualTurnover() {
+        return annualTurnover;
+    }
+
+    public String getFullName() {
+        return fullName;
+    }
+
+    public OrganizationType getType() {
+        return type;
+    }
+
+    public Address getPostalAddress() {
+        return postalAddress;
+    }
 
     public void setId(Long id) {
         if (id <= 0) throw new IllegalArgumentException("Id должно быть > 0");
