@@ -26,6 +26,10 @@ public class CollectionManager {
         this.orgCollection = orgCollection;
     }
 
+    public void removeElement(String key){
+        orgCollection.remove(key);
+    }
+
     public void addElement(String key, Organization org){
         orgCollection.put(key, org);
     }

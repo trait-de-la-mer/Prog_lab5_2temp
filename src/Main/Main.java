@@ -24,7 +24,9 @@ public class Main
                 new Help(collectionManager),
                 new Info(collectionManager),
                 new Show(collectionManager),
-                new Update(collectionManager)
+                new Update(collectionManager),
+                new Remove(collectionManager),
+                new Save(collectionManager)
         );
 
         Consoll console = new Consoll(cm);
