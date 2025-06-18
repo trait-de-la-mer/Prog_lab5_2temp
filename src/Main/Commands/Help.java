@@ -12,9 +12,11 @@ public class Help extends Command{
     }
 
     @Override
-    public void execute(String parametr) {
+    public void execute(String args) {
+        if (args != null && !args.isEmpty()) throw new IllegalArgumentException(
+                "В команде " + getName() + " не может быть аргументов!");
         for (String nameCommand : CommandMannager.getCommands().keySet()){
-            Consoll.printSmt(nameCommand + " -  " + CommandMannager.getCommands().get(nameCommand).getInfo());
+            Consoll.printSmt(nameCommand + " - " + CommandMannager.getCommands().get(nameCommand).getInfo());
         }
     }
 }

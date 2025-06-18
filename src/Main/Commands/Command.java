@@ -32,5 +32,5 @@ public abstract class Command{
         return name;
     }
 
-    public abstract void execute(String parametr);
+    public abstract void execute(String args);
 }

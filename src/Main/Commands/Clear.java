@@ -12,7 +12,8 @@ public class Clear extends Command{
 
     @Override
     public void execute(String args) {
-        if (!args.isEmpty()) throw new IllegalArgumentException("В команде" + getName() + " не может быть аргументов!");
+        if (args != null && !args.isEmpty()) throw new IllegalArgumentException(
+                "В команде " + getName() + " не может быть аргументов!");
         getCollectionManager().clearCollection();
     }
 }

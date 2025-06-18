@@ -14,9 +14,10 @@ public class Info extends Command{
 
     @Override
     public void execute(String args) {
-        if (!args.isEmpty()) throw new IllegalArgumentException("В команде" + getName() + " не может быть аргументов!");
-        Consoll.printSmt(getCollectionManager().getCollectionType());
-        Consoll.printSmt(String.valueOf(getCollectionManager().getCollectionSyze()));
-        Consoll.printSmt(String.valueOf(getCollectionManager().getCreationDate()));
+        if (args != null && !args.isEmpty()) throw new IllegalArgumentException(
+                "В команде " + getName() + " не может быть аргументов!");
+        Consoll.printSmt("тип: " + getCollectionManager().getCollectionType());
+        Consoll.printSmt("дата инициализации: " + getCollectionManager().getCollectionSyze());
+        Consoll.printSmt("кол-во элементов: " + getCollectionManager().getCreationDate());
     }
 }

@@ -19,10 +19,11 @@ public class Main
         CommandMannager cm = new CommandMannager(
                 new ExecuteScript(collectionManager),
                 new Clear(collectionManager),
-                new Printcccc(collectionManager), //УДАЛИТЬ!!!!!!!!!!!!!1
                 new Insert(collectionManager),
                 new Exit(collectionManager),
-                new Help(collectionManager)
+                new Help(collectionManager),
+                new Info(collectionManager),
+                new Show(collectionManager)
         );
 
         Consoll console = new Consoll(cm);

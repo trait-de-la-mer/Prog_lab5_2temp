@@ -7,18 +7,17 @@ import java.util.HashMap;
 
 public class CollectionManager {
     private static long lastId = 0;
+    private HashMap<String, Organization> orgCollection = new HashMap<>();
+    private final ZonedDateTime creationDate = ZonedDateTime.now();
+
 
     public ZonedDateTime getCreationDate() {
         return creationDate;
     }
 
-    private final ZonedDateTime creationDate = ZonedDateTime.now();
-
     public void setOrgCollection(HashMap<String, Organization> orgCollection) {
         this.orgCollection = orgCollection;
     }
-
-    private HashMap<String, Organization> orgCollection = new HashMap<>();
 
     public void addElement(String key, Organization org){
         orgCollection.put(key, org);
@@ -27,6 +26,7 @@ public class CollectionManager {
     public void clearCollection(){
         orgCollection.clear();
     }
+
     public String getCollectionType() {
         return orgCollection.getClass().getName();
     }
@@ -36,7 +36,6 @@ public class CollectionManager {
     public HashMap<String, Organization> getOrgCollection() {
         return orgCollection;
     }
-
 
     public static Long generateId(){
         return ++lastId;
