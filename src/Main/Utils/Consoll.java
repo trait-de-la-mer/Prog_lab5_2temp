@@ -58,9 +58,10 @@ public class Consoll {
     public static String generateNextLine() {
         try {
             String line = reader.readLine();
-            if (line == null){
+            if (line == null && scriptFlag){
                 if (files.size() == 1) {
                     setReader(System.in);
+                    scriptFlag = false;
                 }
                 else {
                     setReader(readers.getLast());
@@ -69,8 +70,12 @@ public class Consoll {
                 readers.removeLast();
                 return generateNextLine();
             }
-            System.out.println(line);
+            else if (line == null){throw new IllegalArgumentException("Вводить null или ^D - не круто");}
             return line;
+        } catch (IllegalArgumentException e){
+            System.err.println("Некорректный символ, критическая ошибка");
+            System.exit(0);
+            return "";
         } catch (IOException e) {
             throw new RuntimeException("Непредвиденная ошибка ввода");
         }

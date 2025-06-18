@@ -5,17 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="009fdd97-7165-4538-b55c-9fe2edd71488" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Main/Commands/Help.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ewq.json" beforeDir="false" afterPath="$PROJECT_DIR$/ewq.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Commands/Clear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Commands/Clear.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Commands/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Commands/Command.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Commands/ExecuteScript.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Commands/ExecuteScript.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Commands/Exit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Commands/Exit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Commands/Info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Commands/Info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Commands/Insert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Commands/Insert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Utils/CommandMannager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Utils/CommandMannager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Utils/Consoll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Utils/Consoll.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main/Utils/Consoll.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main/Utils/Consoll.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,5 +95,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main/Main.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
