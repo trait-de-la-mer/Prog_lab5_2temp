@@ -5,15 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="009fdd97-7165-4538-b55c-9fe2edd71488" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Main/Commands/Show.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main/Commands/Update.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Commands/Clear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Commands/Clear.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Commands/Help.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Commands/Help.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Commands/Info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Commands/Info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Commands/Insert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Commands/Insert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Commands/Printcccc.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/Utils/CollectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Utils/CollectionManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main/Commands/Clear.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main/Commands/Clear.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main/Commands/Info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main/Commands/Info.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main/Commands/Printcccc.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Main/Utils/CollectionManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main/Utils/CollectionManager.class" afterDir="false" />
     </list>

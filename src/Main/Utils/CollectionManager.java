@@ -23,6 +23,11 @@ public class CollectionManager {
         orgCollection.put(key, org);
     }
 
+    public void addElement(String key, Organization org, Long id){
+        orgCollection.put(key, org);
+        orgCollection.get(key).setId(id);
+    }
+
     public void clearCollection(){
         orgCollection.clear();
     }

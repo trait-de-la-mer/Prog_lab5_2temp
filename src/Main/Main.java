@@ -23,7 +23,8 @@ public class Main
                 new Exit(collectionManager),
                 new Help(collectionManager),
                 new Info(collectionManager),
-                new Show(collectionManager)
+                new Show(collectionManager),
+                new Update(collectionManager)
         );
 
         Consoll console = new Consoll(cm);

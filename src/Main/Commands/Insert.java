@@ -42,7 +42,7 @@ public class Insert extends Command {
         getCollectionManager().addElement(parametr, organization);
     }
 
-    private <T> boolean input(String fieldName, Consumer<T> setter, Function<String, T> intoValue) {
+    protected static <T> boolean input(String fieldName, Consumer<T> setter, Function<String, T> intoValue) {
         try {
             String line = Consoll.askSmt(fieldName);
             setter.accept(intoValue.apply(line));
