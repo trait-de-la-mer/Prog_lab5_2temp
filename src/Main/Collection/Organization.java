@@ -2,7 +2,7 @@ package Main.Collection;
 
 import java.time.LocalDate;
 
-public class Organization{
+public class Organization implements Comparable<Organization>{
     private Long id; //Поле не может быть null, Значение поля должно быть больше 0, Значение этого поля должно быть уникальным, Значение этого поля должно генерироваться автоматически
     private String name; //Поле не может быть null, Строка не может быть пустой
     private Coordinates coordinates; //Поле не может быть null
@@ -100,5 +100,10 @@ public class Organization{
                 ", type=" + type +
                 ", postalAddress=" + postalAddress +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Organization o) {
+        return (int)(this.id - o.getId());
     }
 }

@@ -2,16 +2,23 @@ package Main.Utils;
 
 import Main.Collection.Organization;
 
+import java.time.ZonedDateTime;
 import java.util.HashMap;
 
 public class CollectionManager {
-    static private long lastId = 0;
+    private static long lastId = 0;
+
+    public ZonedDateTime getCreationDate() {
+        return creationDate;
+    }
+
+    private final ZonedDateTime creationDate = ZonedDateTime.now();
 
     public void setOrgCollection(HashMap<String, Organization> orgCollection) {
         this.orgCollection = orgCollection;
     }
 
-    private  HashMap<String, Organization> orgCollection = new HashMap<>();
+    private HashMap<String, Organization> orgCollection = new HashMap<>();
 
     public void addElement(String key, Organization org){
         orgCollection.put(key, org);
@@ -20,6 +27,11 @@ public class CollectionManager {
     public void clearCollection(){
         orgCollection.clear();
     }
+    public String getCollectionType() {
+        return orgCollection.getClass().getName();
+    }
+
+    public int getCollectionSyze(){return orgCollection.size();}
 
     public HashMap<String, Organization> getOrgCollection() {
         return orgCollection;

@@ -6,7 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="009fdd97-7165-4538-b55c-9fe2edd71488" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Utils/Consoll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Utils/Consoll.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Collection/Organization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Collection/Organization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Commands/Clear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Commands/Clear.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Commands/Info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Commands/Info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Utils/CollectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Utils/CollectionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main/Collection/Organization.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main/Collection/Organization.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main/Commands/Info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main/Commands/Info.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main/Utils/CollectionManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main/Utils/CollectionManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Main/Utils/Consoll.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main/Utils/Consoll.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
