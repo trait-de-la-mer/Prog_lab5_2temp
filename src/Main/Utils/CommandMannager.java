@@ -8,7 +8,7 @@ import java.util.Locale;
 import java.util.Objects;
 
 public class CommandMannager {
-    private final HashMap<String, Command> commands = new HashMap<>();
+    private static final HashMap<String, Command> commands = new HashMap<>();
 
     public CommandMannager(Command... needComands) {
         for (Command com : needComands){
@@ -17,15 +17,15 @@ public class CommandMannager {
 
     }
 
+    public static HashMap<String, Command> getCommands() {
+        return commands;
+    }
+
     public boolean isCommandExits(String nameCommand){
         return commands.containsKey(nameCommand);
     }
 
     public void executeC(String... nameCommand){
-//        System.out.println(Arrays.toString(nameCommand));
-//        System.out.println(nameCommand.length);
-//        System.out.println(nameCommand[0] + "132");
-//        System.out.println(nameCommand[0] == "");
         if (nameCommand != null && nameCommand.length != 0 && !Objects.equals(nameCommand[0], "")
                 && commands.containsKey(nameCommand[0])){
             String[] copyNameCommand = Arrays.copyOf(nameCommand, nameCommand.length + 1);
@@ -37,7 +37,7 @@ public class CommandMannager {
                 } catch (Exception ex) {Consoll.printSmt(ex.getMessage());}
             }
         else{
-            System.out.println("ебанутый?");
+            Consoll.printSmt("Ты уверен, что ввел правильно?");
         }
     }
 }

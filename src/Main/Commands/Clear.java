@@ -3,6 +3,8 @@ package Main.Commands;
 import Main.Utils.CollectionManager;
 
 public class Clear extends Command{
+    {setName("clear");
+        setInfo("Очищает коллекцию");}
 
     public Clear(CollectionManager colm) {
         super(colm);

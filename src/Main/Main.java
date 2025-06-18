@@ -15,19 +15,17 @@ public class Main
        CollectionManager collectionManager = new CollectionManager();
         JParser jParser = new JParser();
         collectionManager.setOrgCollection(jParser.parse("ewq.json"));
-        System.out.println(collectionManager.getOrgCollection());
-//        collectionManager.getOrgCollection().get("org2").setAnnualTurnover(325324.0);
-//        jParser.convertToJson(collectionManager.getOrgCollection(), "ewq.json");
 
-//        CommandMannager cm = new CommandMannager(
-//                new ExecuteScript(collectionManager),
-//                new Clear(collectionManager),
-//                new Printcccc(collectionManager), //УДАЛИТЬ!!!!!!!!!!!!!1
-//                new Insert(collectionManager),
-//                new Exit(collectionManager)
-//        );
-//
-//        Consoll console = new Consoll(cm);
-//        console.startConsole();
+        CommandMannager cm = new CommandMannager(
+                new ExecuteScript(collectionManager),
+                new Clear(collectionManager),
+                new Printcccc(collectionManager), //УДАЛИТЬ!!!!!!!!!!!!!1
+                new Insert(collectionManager),
+                new Exit(collectionManager),
+                new Help(collectionManager)
+        );
+
+        Consoll console = new Consoll(cm);
+        console.startConsole();
     }
 }

@@ -13,7 +13,8 @@ import java.util.function.Consumer;
 import java.util.function.Function;
 
 public class Insert extends Command {
-    {name = "Insert";}
+    {setName("insert");
+        setInfo("добавляет новый эелемнт");}
 
     public Insert(CollectionManager cm) {
         super(cm);

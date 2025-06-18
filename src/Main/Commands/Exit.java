@@ -3,7 +3,8 @@ package Main.Commands;
 import Main.Utils.CollectionManager;
 
 public class Exit extends Command{
-    {name = "exit";}
+    {setName("exit");
+        setInfo("выходит из программы");}
     public Exit(CollectionManager cm) {
         super(cm);
     }

@@ -6,7 +6,8 @@ import Main.Utils.Consoll;
 import java.io.*;
 
 public class ExecuteScript extends Command{
-    {name = "script";}
+    {setName("script");
+        setInfo("Выполняет скрипт в файле");}
     public ExecuteScript(CollectionManager cm) {
         super(cm);
     }
