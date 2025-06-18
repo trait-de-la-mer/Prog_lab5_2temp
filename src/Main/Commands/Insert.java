@@ -25,6 +25,10 @@ public class Insert extends Command {
         if (parametr == null || parametr.isBlank()) throw new IllegalArgumentException("Неправильный ключ!");
         if (getCollectionManager().getOrgCollection().containsKey(parametr))
             throw new IllegalArgumentException("Элемент с таким ключом уже есть!");
+        Integer key;
+        try {
+            key = Integer.valueOf(parametr);
+        } catch (NumberFormatException e){throw new IllegalArgumentException("ключ должен быть int!");}
         Organization organization = new Organization();
         Address address = new Address();
         Coordinates coordinates = new Coordinates();
@@ -39,7 +43,7 @@ public class Insert extends Command {
         organization.setCoordinates(coordinates);
         while(!input("Индекс", address::setZipCode, String::valueOf));;
         organization.setPostalAddress(address);
-        getCollectionManager().addElement(parametr, organization);
+        getCollectionManager().addElement(key, organization);
         Consoll.printSmt("Успешно добавлен!");
     }
 

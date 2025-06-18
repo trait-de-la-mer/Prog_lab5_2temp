@@ -1,13 +1,14 @@
 package Main.Utils;
 
 import Main.Collection.Organization;
+import Main.Commands.Insert;
 
 import java.time.ZonedDateTime;
 import java.util.HashMap;
 
 public class CollectionManager {
     private long lastId = 0;
-    private HashMap<String, Organization> orgCollection = new HashMap<>();
+    private HashMap<Integer, Organization> orgCollection = new HashMap<>();
     private final ZonedDateTime creationDate = ZonedDateTime.now();
 
     public void setLastId(long lastId) {
@@ -22,19 +23,19 @@ public class CollectionManager {
         return creationDate;
     }
 
-    public void setOrgCollection(HashMap<String, Organization> orgCollection) {
+    public void setOrgCollection(HashMap<Integer, Organization> orgCollection) {
         this.orgCollection = orgCollection;
     }
 
-    public void removeElement(String key){
+    public void removeElement(Integer key){
         orgCollection.remove(key);
     }
 
-    public void addElement(String key, Organization org){
+    public void addElement(Integer key, Organization org){
         orgCollection.put(key, org);
     }
 
-    public void addElement(String key, Organization org, Long id){
+    public void addElement(Integer key, Organization org, Long id){
         orgCollection.put(key, org);
         orgCollection.get(key).setId(id);
     }
@@ -49,7 +50,7 @@ public class CollectionManager {
 
     public int getCollectionSyze(){return orgCollection.size();}
 
-    public HashMap<String, Organization> getOrgCollection() {
+    public HashMap<Integer, Organization> getOrgCollection() {
         return orgCollection;
     }
 

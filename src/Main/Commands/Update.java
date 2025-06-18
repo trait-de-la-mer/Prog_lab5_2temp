@@ -25,7 +25,7 @@ public class Update extends Command{
         } catch (NumberFormatException e) {
             throw new RuntimeException("аргумент должен быть Long");
         }
-        for (String key : getCollectionManager().getOrgCollection().keySet()){
+        for (Integer key : getCollectionManager().getOrgCollection().keySet()){
             if (Objects.equals(getCollectionManager().getOrgCollection().get(key).getId(), id)){
                 Organization organization = new Organization();
                 Address address = new Address();

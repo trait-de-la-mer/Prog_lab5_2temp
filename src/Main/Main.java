@@ -28,7 +28,6 @@ public class Main
                 new Remove(collectionManager),
                 new Save(collectionManager)
         );
-
         Consoll console = new Consoll(cm);
         console.startConsole();
     }

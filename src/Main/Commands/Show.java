@@ -3,6 +3,8 @@ package Main.Commands;
 import Main.Utils.CollectionManager;
 import Main.Utils.Consoll;
 
+import java.net.Inet4Address;
+
 public class Show extends Command{
     {setName("show");
     setInfo("выводит все элементы в коллекции");}
@@ -15,7 +17,7 @@ public class Show extends Command{
     public void execute(String args) {
         if (args != null && !args.isEmpty()) throw new IllegalArgumentException(
                 "В команде " + getName() + " не может быть аргументов!");
-        for (String key : getCollectionManager().getOrgCollection().keySet()){
+        for (Integer key : getCollectionManager().getOrgCollection().keySet()){
             Consoll.printSmt(getCollectionManager().getOrgCollection().get(key).toString());
         }
     }

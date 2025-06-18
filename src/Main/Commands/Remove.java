@@ -11,6 +11,12 @@ public class Remove extends Command{
 
     @Override
     public void execute(String args) {
-        getCollectionManager().removeElement(args);
+        int key;
+        try{
+            key = Integer.parseInt(args);
+        } catch (NumberFormatException e) {
+            throw new IllegalArgumentException("Аргумент жолжен быть int");
+        }
+        getCollectionManager().removeElement(key);
     }
 }

@@ -19,8 +19,8 @@ public class JParser {
         this.collectionManager = collectionManager;
     }
 
-    public HashMap<String, Organization> parse(String file){
-        HashMap<String, Organization> organizationsMap = new HashMap<>();
+    public HashMap<Integer, Organization> parse(String file){
+        HashMap<Integer, Organization> organizationsMap = new HashMap<>();
         JSONParser parser = new JSONParser();
 
         try (InputStreamReader reader = new InputStreamReader(
@@ -49,7 +49,7 @@ public class JParser {
                 Address address = new Address();
                 address.setZipCode((String) addressJson.get("zipCode"));
                 org.setPostalAddress(address);
-                organizationsMap.put(orgKey, org);
+                organizationsMap.put(Integer.valueOf(orgKey), org);
             }
 
         } catch (FileNotFoundException e ){
@@ -71,10 +71,10 @@ public class JParser {
     }
 
 
-        public void convertToJson(HashMap<String, Organization> organizations, String file) {
+        public void convertToJson(HashMap<Integer, Organization> organizations, String file) {
             JSONObject orgJ = new JSONObject();
             try (PrintWriter writer = new PrintWriter(new FileOutputStream(file))) {
-                for (String key : organizations.keySet()) {
+                for (Integer key : organizations.keySet()) {
                     Organization org = organizations.get(key);
                     JSONObject orgJson = new JSONObject();
                     orgJson.put("id", org.getId());
@@ -95,7 +95,7 @@ public class JParser {
                 writer.write(orgJ.toJSONString());
                 writer.flush();
             } catch (Exception e) {
-                Consoll.printSmt("Произошла ошибка при записи в файл");
+                Consoll.printSmt("Произошла ошибка при записи в файл " );
             }
         }
     }
