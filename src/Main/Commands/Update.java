@@ -6,6 +6,7 @@ import Main.Collection.Organization;
 import Main.Collection.OrganizationType;
 import Main.Utils.CollectionManager;
 
+import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.Objects;
 
@@ -18,7 +19,6 @@ public class Update extends Command{
 
     @Override
     public void execute(String args) {
-        //TODO Сделать проверку id
         Long id;
         try{
             id = Long.valueOf(args);
@@ -30,6 +30,7 @@ public class Update extends Command{
                 Organization organization = new Organization();
                 Address address = new Address();
                 Coordinates coordinates = new Coordinates();
+                organization.setCreationDate(LocalDate.now());
                 while(!Insert.input(Arrays.toString(OrganizationType.values()), organization::setType, OrganizationType::fromString));
                 while(!Insert.input("имя", organization::setName, String::valueOf));
                 while(!Insert.input("полное имя", organization::setFullName, String::valueOf));

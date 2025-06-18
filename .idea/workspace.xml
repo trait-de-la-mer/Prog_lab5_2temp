@@ -5,22 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="009fdd97-7165-4538-b55c-9fe2edd71488" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Main/Commands/ReplaceIfGreater.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ewq.json" beforeDir="false" afterPath="$PROJECT_DIR$/ewq.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Commands/Insert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Commands/Insert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Commands/Remove.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Commands/Remove.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Commands/Show.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Commands/Show.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Collection/Organization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Collection/Organization.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/Commands/Update.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Commands/Update.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Utils/CollectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Utils/CollectionManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Utils/JParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Utils/JParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main/Commands/Insert.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main/Commands/Insert.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main/Commands/Remove.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main/Commands/Remove.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main/Commands/Show.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main/Commands/Show.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main/Collection/Organization.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main/Collection/Organization.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Main/Commands/Update.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main/Commands/Update.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main/Utils/CollectionManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main/Utils/CollectionManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main/Utils/JParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main/Utils/JParser.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +55,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Main.executor": "Debug",
+    "Application.Main.executor": "Run",
     "Application.Unnamed.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -114,8 +105,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main/Main.java</url>
-          <line>14</line>
-          <option name="timeStamp" value="2" />
+          <line>32</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

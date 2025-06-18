@@ -104,6 +104,6 @@ public class Organization implements Comparable<Organization>{
 
     @Override
     public int compareTo(Organization o) {
-        return (int)(this.id - o.getId());
+        return (int)(this.annualTurnover - o.annualTurnover);
     }
 }

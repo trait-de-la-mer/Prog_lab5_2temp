@@ -26,7 +26,8 @@ public class Main
                 new Show(collectionManager),
                 new Update(collectionManager),
                 new Remove(collectionManager),
-                new Save(collectionManager)
+                new Save(collectionManager),
+                new ReplaceIfGreater(collectionManager)
         );
         Consoll console = new Consoll(cm);
         console.startConsole();
