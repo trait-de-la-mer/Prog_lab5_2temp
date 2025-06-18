@@ -22,6 +22,9 @@ public class PrintDescending extends Command{
         collectionReverse.addAll(getCollectionManager().getOrgCollection().keySet());
         collectionReverse.sort((key1, key2) -> getCollectionManager().getOrgCollection().get(key1).compareTo(
                 getCollectionManager().getOrgCollection().get(key2)));
-        Consoll.printSmt(collectionReverse.toString());
+        collectionReverse = collectionReverse.reversed();
+        for (Integer key : collectionReverse){
+            Consoll.printSmt(getCollectionManager().getOrgCollection().get(key).toString());
+        }
     }
 }
