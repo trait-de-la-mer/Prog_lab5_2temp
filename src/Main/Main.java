@@ -30,7 +30,8 @@ public class Main
                 new ReplaceIfGreater(collectionManager),
                 new RemoveGreaterKey(collectionManager),
                 new RemoveAllByAnnualTurnover(collectionManager),
-                new MaxByIn(collectionManager)
+                new MaxByIn(collectionManager),
+                new PrintDescending(collectionManager)
         );
         Consoll console = new Consoll(cm);
         console.startConsole();
